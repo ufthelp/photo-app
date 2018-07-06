@@ -1,0 +1,9 @@
+<section class="album-list">
+  <mat-list role="list">
+    <mat-list-item role="listitem" *ngFor="let album of albums" (click)="showPhotos(album.id)">{{album.title}}
+    </mat-list-item>
+  </mat-list>
+</section>
+<section class="photos">
+  <app-photos *ngIf="albumId" [albumId]="albumId"></app-photos>
+</section>

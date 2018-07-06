@@ -1,0 +1,11 @@
+<section class="container">
+  <section class="users">
+    <mat-list role="list">
+      <mat-list-item role="listitem" *ngFor="let user of userData$" (click)="showAlbums(user.id)">{{user.id}}
+      </mat-list-item>
+    </mat-list>
+  </section>
+  <section class="albums">
+    <app-albums *ngIf="userId" [userId]="userId"></app-albums>
+  </section>
+</section>
