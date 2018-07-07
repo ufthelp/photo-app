@@ -30,3 +30,18 @@ table {
   justify-content: center;
   margin: 1rem;
 }
+/** Responsive CSS */
+
+@media(max-width: 1024px) {
+    .mat-list-item{
+      width: 12rem;
+    }
+  }
+  @media(max-width: 1024px) {
+    .mat-list-item{
+      width: 10rem;
+    }
+    .mat-list {
+        margin-left: 3rem;
+      }
+  }

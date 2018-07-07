@@ -12,3 +12,30 @@
   height: auto;
   padding: 1rem;
 }
+
+/** Responsive CSS */
+
+@media(max-width: 1024px) {
+  .mat-list {
+    width: 12rem;
+  }
+}
+
+@media(max-width: 1024px) {
+  .mat-list {
+    width: 10rem;
+  }
+}
+
+@media(max-width: 600px) {
+  .container {
+    display: block;
+  }
+  .users {
+    display: flex;
+    justify-content: center;
+  }
+  .mat-list {
+    width: 12rem;
+  }
+}

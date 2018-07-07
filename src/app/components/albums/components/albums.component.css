@@ -14,3 +14,30 @@
   justify-content: space-between;
   min-width: 41rem;
 }
+
+/** Responsive CSS */
+
+@media(max-width: 1024px) {
+  .mat-list {
+    width: 12rem;
+  }
+  .side-container {
+    min-width: 34rem;
+  }
+}
+
+@media(max-width: 768px) {
+  .mat-list {
+    width: 10rem;
+    margin-left: 3rem;
+  }
+  .side-container {
+    min-width: 26rem;
+  }
+}
+
+@media(max-width: 600px) {
+  .side-container{
+    margin-top: 2rem;
+  }
+}
