@@ -1,21 +1,19 @@
-import { Component, Input,ViewChild } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 import { PhotosService } from '../../services/photos.service';
 
 @Component({
-  selector: 'app-photos',              
+  selector: 'app-photos',
   templateUrl: './photos.component.html',
   styleUrls: ['./photos.component.css']
 })
-export class PhotosComponent  {
+export class PhotosComponent {
   @Input()
-  albumId:number;
-
+  albumId: number;
+  title: string = "Photos";
   photos: any;
 
-  displayedColumns: string[] = ['title', 'url'];
-
-  constructor(private photosService:PhotosService) { }
+  constructor(private photosService: PhotosService) { }
 
   ngOnChanges() {
     this.getPhotosData(this.albumId);

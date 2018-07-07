@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { SimpleChanges } from '@angular/core';
 import { AlbumService } from '../services/album.service';
 
 @Component({
@@ -27,7 +26,6 @@ export class AlbumsComponent {
   }
   showPhotos(albumId) {
     this.albumId = albumId;
-    console.log(this.albumId);
   }
 
 }

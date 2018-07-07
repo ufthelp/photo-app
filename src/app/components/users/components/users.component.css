@@ -1,9 +1,14 @@
 .mat-list {
-    width: 15rem;
-    cursor: pointer;
-  }
-.container{
-    display: flex;
+  width: 15rem;
+  cursor: pointer;
 }
 
-  
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.mat-list-item {
+  height: auto;
+  padding: 1rem;
+}

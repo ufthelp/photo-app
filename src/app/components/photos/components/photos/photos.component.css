@@ -1,11 +1,32 @@
-.mat-list {
-    width: 20rem;
-    margin-left: 5rem;
-    cursor: pointer;
-  }
-  .mat-list-item {
-    border: 1px solid rgba(0, 0, 0, .12);
+.mat-list-item {
+  width: 15rem;
+  height: auto;
 }
+
+.mat-list {
+  margin-left: 5rem;
+}
+
 table {
-    width: 100%;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  margin: 1rem;
+}
+
+.photoList {
+  height: 60rem;
+  overflow: scroll;
+}
+
+.photo {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
 }

@@ -24,10 +24,11 @@ export class UsersComponent implements OnInit {
     this.userService.getUsers()
       .subscribe(data => {
         this.userData$ = data;
-        //console.log(this.userData$);
+        this.userId = data[0]['id'];
+        console.log(this.userId);
       });
   }
-  showAlbums(userId){
-    this.userId=userId;
+  showAlbums(userId) {
+    this.userId = userId;
   }
 }

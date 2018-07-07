@@ -1,10 +1,10 @@
-export interface IUsers{
+export interface IUsers {
     id: number;
     name: string;
     username: string;
     email: string;
-    address:{
-        street:string;
+    address: {
+        street: string;
         suite: string;
         city: string;
         zipcode: string;
@@ -12,7 +12,7 @@ export interface IUsers{
     };
     phone: string;
     website: string;
-    company:{
+    company: {
         name: string;
         catchPhrase: string;
         bs: string;

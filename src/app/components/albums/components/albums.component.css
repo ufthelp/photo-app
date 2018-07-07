@@ -1,9 +1,16 @@
 .mat-list {
-    width: 15rem;
-    margin-left: 5rem;
-    cursor: pointer;
-  }
-  
-.side-container{
+  width: 15rem;
+  margin-left: 5rem;
+  cursor: pointer;
+}
+
+.mat-list-item {
+  height: auto;
+  padding: 1rem;
+}
+
+.side-container {
   display: flex;
+  justify-content: space-between;
+  min-width: 41rem;
 }

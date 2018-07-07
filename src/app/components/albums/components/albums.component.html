@@ -3,14 +3,14 @@
     <mat-list role="list">
       <section class="header">
         <i class="material-icons">
-            album
+          album
         </i>
         <h3 mat-subheader>{{title}}</h3>
       </section>
       <mat-list-item role="listitem" *ngFor="let album of albums" (click)="showPhotos(album.id)">
         {{album.title}}
         <div class="icon">
-            <mat-icon matSuffix>play_arrow</mat-icon>
+          <mat-icon matSuffix>play_arrow</mat-icon>
         </div>
       </mat-list-item>
     </mat-list>
