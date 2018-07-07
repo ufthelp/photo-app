@@ -3,7 +3,6 @@ import { HttpClient } from '@angular/common/http';
 
 import { UserService } from '../services/user.service';
 
-
 @Component({
   selector: 'app-users',
   templateUrl: './users.component.html',
@@ -25,7 +24,6 @@ export class UsersComponent implements OnInit {
       .subscribe(data => {
         this.userData$ = data;
         this.userId = data[0]['id'];
-        console.log(this.userId);
       });
   }
   showAlbums(userId) {

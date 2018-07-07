@@ -5,6 +5,7 @@ import 'rxjs/add/operator/catch';
 import 'rxjs/add/observable/throw';
 
 import { IUsers } from '../models/users.model';
+import { ApiUrls } from '../../../url.enum';
 
 @Injectable()
 export class UserService {
@@ -16,7 +17,7 @@ export class UserService {
   * @returns returns an object of users
   */
   getUsers(){
-    return this.http.get<IUsers>('https://jsonplaceholder.typicode.com/users')
+    return this.http.get<IUsers>(ApiUrls.getUsers)
   }
   /**
   * This is the errorHandler function

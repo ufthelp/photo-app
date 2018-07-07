@@ -10,13 +10,13 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
 import { AppComponent } from './app.component';
-import { UsersComponent } from './components/users/components/users.component';
-import { AlbumsComponent } from './components/albums/components/albums.component';
-import { PhotosComponent } from './components/photos/components/photos/photos.component';
+import { UsersComponent } from './pages/users/components/users.component';
+import { AlbumsComponent } from './pages/albums/components/albums.component';
+import { PhotosComponent } from './pages/photos/components/photos/photos.component';
 
-import { UserService } from './components/users/services/user.service';
-import { AlbumService } from './components/albums/services/album.service';
-import { PhotosService } from './components/photos/services/photos.service';
+import { UserService } from './pages/users/services/user.service';
+import { AlbumService } from './pages/albums/services/album.service';
+import { PhotosService } from './pages/photos/services/photos.service';
 
 
 @NgModule({

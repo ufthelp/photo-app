@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+
 import { IPhotos } from '../models/photos.model';
+import { ApiUrls } from '../../../url.enum';
 
 
 @Injectable({
@@ -14,6 +16,6 @@ export class PhotosService {
  * @returns returns an object of Photos
  */
   getPhotos(albumId) {
-    return this.http.get<IPhotos>(`https://jsonplaceholder.typicode.com/photos?albumId=${albumId}`)
+    return this.http.get<IPhotos>(`${ApiUrls.getPhotos}=${albumId}`)
   }
 }
