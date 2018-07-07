@@ -1,5 +1,6 @@
-<mat-list role="list">
+<!-- <mat-list role="list">
   <mat-list-item role="listitem" *ngFor="let photo of photos" >
-    {{photos.title}}
+    {{photo.title}}
   </mat-list-item>
-</mat-list>
+</mat-list> -->
+<app-table [data]="photos" [cols]="displayedColumns"></app-table>

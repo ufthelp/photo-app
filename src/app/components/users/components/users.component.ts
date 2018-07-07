@@ -12,6 +12,7 @@ import { UserService } from '../services/user.service';
 export class UsersComponent implements OnInit {
   userData$: any;
   userId: number;
+  title: string = "User";
 
   constructor(private userService: UserService, private http: HttpClient) { }
 

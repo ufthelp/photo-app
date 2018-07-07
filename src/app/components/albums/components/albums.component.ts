@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { SimpleChanges } from '@angular/core';
 import { AlbumService } from '../services/album.service';
 
 @Component({
@@ -6,27 +7,26 @@ import { AlbumService } from '../services/album.service';
   templateUrl: './albums.component.html',
   styleUrls: ['./albums.component.css']
 })
-export class AlbumsComponent implements OnInit {
+export class AlbumsComponent {
   @Input()
-  userId:number;
-  albumId:number;
+  userId: number;
+  albumId: number;
+  title: string = "Albums";
+  albums: any;
+  constructor(private albumService: AlbumService) { }
 
-  albums : any;
-  constructor(private albumService :AlbumService) { }
-
-  ngOnInit() {
+  /** Call service for each change */
+  ngOnChanges() {
     this.getAlbumsData(this.userId);
   }
-
   getAlbumsData(userId) {
     this.albumService.getAlbums(userId)
       .subscribe(data => {
         this.albums = data;
-        console.log(this.albums);
       });
   }
-  showPhotos(albumId){
-    this.albumId=albumId;
+  showPhotos(albumId) {
+    this.albumId = albumId;
     console.log(this.albumId);
   }
 

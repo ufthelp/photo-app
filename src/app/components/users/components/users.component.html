@@ -1,7 +1,18 @@
 <section class="container">
   <section class="users">
     <mat-list role="list">
-      <mat-list-item role="listitem" *ngFor="let user of userData$" (click)="showAlbums(user.id)">{{user.id}}
+      <section class="header">
+        <i class="material-icons">
+          account_circle
+        </i>
+        <h3 mat-subheader>{{title}}</h3>
+      </section>
+
+      <mat-list-item role="listitem" *ngFor="let user of userData$" (click)="showAlbums(user.id)">
+        {{user.name}}
+        <div class="icon">
+          <mat-icon matSuffix>play_arrow</mat-icon>
+        </div>
       </mat-list-item>
     </mat-list>
   </section>
