@@ -17,6 +17,7 @@ import { PhotosComponent } from './pages/photos';
 import { UserService } from './pages/users';
 import { AlbumService } from './pages/albums';
 import { PhotosService } from './pages/photos';
+import { CardColorDirective } from './directive/card-color.directive';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { PhotosService } from './pages/photos';
     AppComponent,
     UsersComponent,
     AlbumsComponent,
-    PhotosComponent
+    PhotosComponent,
+    CardColorDirective
   ],
   imports: [
     BrowserModule,
